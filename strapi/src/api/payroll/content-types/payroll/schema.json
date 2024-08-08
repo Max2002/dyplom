@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "payrolls",
+  "info": {
+    "singularName": "payroll",
+    "pluralName": "payrolls",
+    "displayName": "Payroll",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "position": {
+      "type": "string",
+      "required": true
+    },
+    "salary": {
+      "type": "integer",
+      "required": true
+    },
+    "users_permissions_users": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "payrolls"
+    },
+    "organisation": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::organisation.organisation",
+      "inversedBy": "payrolls"
+    },
+    "isOpen": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    }
+  }
+}

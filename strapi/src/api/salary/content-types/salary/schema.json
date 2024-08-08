@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "salaries",
+  "info": {
+    "singularName": "salary",
+    "pluralName": "salaries",
+    "displayName": "Salary",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "position": {
+      "type": "string"
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "salary"
+    }
+  }
+}

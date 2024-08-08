@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1fe1f46f-d6ca-4525-81c7-311ad95abad5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/next/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next/.huskyrc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next/.lintstagedrc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next/.prettierrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next/src/api/api.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next/src/components/BoolField/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next/src/components/BoolField/styled.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next/src/components/CRUDBoard/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next/src/components/CRUDBoard/styled.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next/src/components/MediaField/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next/src/components/MediaField/styled.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next/src/components/StatusRequest/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next/src/components/StatusRequest/styled.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next/src/constants/cabinetConstants.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next/src/constants/messages.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next/src/redux/actionCreator/getCollection.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next/src/redux/actionCreator/getUser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next/src/redux/reducers/collection.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next/src/redux/reducers/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next/src/redux/reducers/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next/src/redux/selectors/getCollection.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next/src/redux/selectors/getUser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next/src/redux/store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next/src/sections/Cabinet/actionAvatar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next/src/sections/Cabinet/changeInfo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next/src/sections/Cabinet/info.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next/src/utils/HOCAuth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next/src/utils/create.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next/src/utils/delete.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/next/src/utils/update.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/strapi/src/api/news/routes/endpoints.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/strapi/src/api/organisation/routes/endpoints.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/next.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/thirteen.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vercel.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/_app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/_document.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/api/hello.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/Home.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/globals.css" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="SCSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2O0MxfPe8g0rzvWH7PpBwKXSs9i" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;18.12.1&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;18.16.3&quot;,
+    &quot;js.linters.configure.manually.selectedeslint&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Max/Work/dyplom/strapi/src/api/organisation/routes&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;C:\\Users\\Max\\Work\\dyplom\\next\\node_modules\\eslint&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.linters.eslint&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\WebStorm 2022.2.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Max\Work\dyplom\strapi\src\api\organisation\routes" />
+      <recent name="C:\Users\Max\Work\dyplom\next" />
+      <recent name="C:\Users\Max\Work\dyplom\public\images" />
+      <recent name="C:\Users\Max\Work\dyplom\src\sections\Layout" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Max\Work\dyplom\public\images" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1fe1f46f-d6ca-4525-81c7-311ad95abad5" name="Changes" comment="" />
+      <created>1680693293727</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1680693293727</updated>
+      <workItem from="1680693299495" duration="19308000" />
+      <workItem from="1680792024103" duration="10216000" />
+      <workItem from="1680868142741" duration="11898000" />
+      <workItem from="1680977540442" duration="5959000" />
+      <workItem from="1681045524243" duration="16000" />
+      <workItem from="1681059836510" duration="2246000" />
+      <workItem from="1681144276798" duration="7605000" />
+      <workItem from="1681230613325" duration="8991000" />
+      <workItem from="1681299034838" duration="4891000" />
+      <workItem from="1681329177519" duration="2156000" />
+      <workItem from="1681406625327" duration="598000" />
+      <workItem from="1681466808806" duration="4212000" />
+      <workItem from="1681488235874" duration="643000" />
+      <workItem from="1681490819400" duration="1303000" />
+      <workItem from="1681562148316" duration="23000" />
+      <workItem from="1682362085948" duration="9604000" />
+      <workItem from="1682425905586" duration="14226000" />
+      <workItem from="1682705669378" duration="7807000" />
+      <workItem from="1682783269878" duration="6881000" />
+      <workItem from="1682855629390" duration="6961000" />
+      <workItem from="1682876401901" duration="8803000" />
+      <workItem from="1682945483233" duration="9124000" />
+      <workItem from="1682973740972" duration="1527000" />
+      <workItem from="1683034957555" duration="7260000" />
+      <workItem from="1683109254571" duration="10958000" />
+      <workItem from="1683725666610" duration="5737000" />
+      <workItem from="1683810032197" duration="1372000" />
+      <workItem from="1683821081303" duration="4883000" />
+      <workItem from="1683901286799" duration="4681000" />
+      <workItem from="1684153360342" duration="15237000" />
+      <workItem from="1684252181560" duration="9203000" />
+      <workItem from="1684336323980" duration="16377000" />
+      <workItem from="1684410310781" duration="8549000" />
+      <workItem from="1684427030254" duration="10358000" />
+      <workItem from="1684502007117" duration="15036000" />
+      <workItem from="1684772649601" duration="10190000" />
+      <workItem from="1684836578490" duration="1695000" />
+      <workItem from="1684855532917" duration="3014000" />
+      <workItem from="1684864534835" duration="6497000" />
+      <workItem from="1684938134469" duration="13682000" />
+      <workItem from="1685016530205" duration="15058000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,78 @@
+version: "3.5"
+
+services:
+  strapiexample:
+    container_name: strapi
+    restart: unless-stopped
+    env_file: ./strapi/.env
+    build:
+      context: ./strapi
+      dockerfile: dockerFile
+    ports:
+      - "1337:1337"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.node-server.rule=Host(`admin.neptunesushi.zt.ua`)"
+      - "traefik.http.routers.node-server.entrypoints=websecure"
+      - "traefik.http.routers.node-server.tls.certresolver=myresolver"
+      - "traefik.http.middlewares.redirect-to-https.redirectscheme.scheme=https"
+      - "traefik.http.middlewares.secure-redirect.redirectscheme.permanent=true"
+      - "traefik.http.routers.redirs.rule=hostregexp(`{host:.+}`)"
+      - "traefik.http.routers.redirs.entrypoints=web"
+      - "traefik.http.routers.redirs.middlewares=redirect-to-https"
+
+  postgres:
+    image: postgres:14.3-alpine
+    container_name: db
+    environment:
+      - POSTGRES_PASSWORD=060802
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=dyplom
+
+  reverse-proxy:
+    image: traefik:v2.4
+    container_name: "traefik"
+    command:
+      - "--api.insecure=true"
+      - "--api.dashboard=true"
+      - "--providers.docker=true"
+      - "--entryPoints.web.address=:80"
+      - "--entryPoints.websecure.address=:443"
+      - "--entrypoints.web.http.redirections.entryPoint.to=websecure"
+      - "--entrypoints.web.http.redirections.entryPoint.scheme=https"
+      - "--entrypoints.web.http.redirections.entrypoint.permanent=true"
+      - "--providers.docker.exposedbydefault=false"
+      - "--certificatesresolvers.myresolver.acme.httpchallenge=true"
+      - "--certificatesresolvers.myresolver.acme.httpchallenge.entrypoint=web"
+      - "--certificatesresolvers.myresolver.acme.email=hello@paularah.com"
+      - "--certificatesresolvers.myresolver.acme.storage=/letsencrypt/acme.json"
+    ports:
+      - "443:443"
+      - "80:80"
+      - "8080:8080"
+    volumes:
+      - "./letsencrypt:/letsencrypt"
+      - "/var/run/docker.sock:/var/run/docker.sock:ro"
+
+  next:
+    container_name: next
+    restart: unless-stopped
+    env_file: ./next/.env
+    build:
+      context: ./next
+      dockerfile: dockerFile
+    ports:
+      - "3000:3000"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.client-server.rule=Host(`neptunesushi.zt.ua`)"
+      - "traefik.http.routers.client-server.entrypoints=websecure"
+      - "traefik.http.routers.client-server.tls.certresolver=myresolver"
+      - "traefik.http.middlewares.redirect-to-https.redirectscheme.scheme=https"
+      - "traefik.http.middlewares.secure-redirect.redirectscheme.permanent=true"
+      - "traefik.http.routers.redirs.rule=hostregexp(`{host:.+}`)"
+      - "traefik.http.routers.redirs.entrypoints=web"
+      - "traefik.http.routers.redirs.middlewares=redirect-to-https"
+
+volumes:
+  build:

@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_work_schedule_entity_schedules",
+  "info": {
+    "displayName": "entitySchedule"
+  },
+  "options": {},
+  "attributes": {
+    "user": {
+      "type": "string"
+    },
+    "timeShift": {
+      "type": "integer"
+    },
+    "typeWorkWeek": {
+      "type": "string"
+    }
+  }
+}

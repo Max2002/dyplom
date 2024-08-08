@@ -1,0 +1,68 @@
+{
+  "kind": "collectionType",
+  "collectionName": "organisations",
+  "info": {
+    "singularName": "organisation",
+    "pluralName": "organisations",
+    "displayName": "Organisation",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "logo": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "news": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::news.news",
+      "mappedBy": "organisation"
+    },
+    "payrolls": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::payroll.payroll",
+      "mappedBy": "organisation"
+    },
+    "work_schedules": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::work-schedule.work-schedule",
+      "mappedBy": "organisation"
+    },
+    "vacation_schedules": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::vacation-schedule.vacation-schedule",
+      "mappedBy": "organisation"
+    },
+    "job_applications": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::job-application.job-application",
+      "mappedBy": "organisation"
+    },
+    "accountings": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::accounting.accounting",
+      "mappedBy": "organisation"
+    }
+  }
+}

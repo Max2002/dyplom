@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "job_applications",
+  "info": {
+    "singularName": "job-application",
+    "pluralName": "job-applications",
+    "displayName": "Job-application",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nameSurname": {
+      "type": "string",
+      "required": true
+    },
+    "selfDescribe": {
+      "type": "text",
+      "required": true
+    },
+    "position": {
+      "type": "string",
+      "required": true
+    },
+    "organisation": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::organisation.organisation",
+      "inversedBy": "job_applications"
+    },
+    "user_id": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "job_applications"
+    },
+    "status": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

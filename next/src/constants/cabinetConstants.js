@@ -1,0 +1,12 @@
+export const DEFAULT = 'default';
+export const NEWS = 'news';
+export const ORGANISATIONS = 'organisations';
+export const USERS = 'users';
+export const SEARCH_ORGANISATIONS = 'searchOrganisations';
+export const JOB_APPLICATIONS = 'jobApplications';
+export const USERS_ORGANISATION = 'usersOrganisations';
+export const PAYROLL = 'payroll';
+export const POSITION_USER = 'positionUser';
+export const WORK_SCHEDULE = 'workSchedule';
+export const VACATION_SCHEDULE = 'vacationSchedule';
+export const ACCOUNTING = 'accounting';
